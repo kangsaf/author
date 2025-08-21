@@ -1,0 +1,128 @@
+{
+  "trading": {
+    "enabled": false,
+    "default_symbol": "BTCUSDT",
+    "default_timeframe": "1h",
+    "auto_trading": false
+  },
+  "strategy": {
+    "active_strategy": "ai_signal",
+    "enabled": true,
+    "ai_signal": {
+      "rsi_period": 14,
+      "rsi_oversold": 30,
+      "rsi_overbought": 70,
+      "macd_fast": 12,
+      "macd_slow": 26,
+      "macd_signal": 9,
+      "bb_period": 20,
+      "bb_std": 2,
+      "volume_threshold": 1.5
+    },
+    "scalping": {
+      "enabled": false,
+      "timeframe": "5m",
+      "profit_target": 0.005,
+      "stop_loss": 0.003
+    },
+    "swing": {
+      "enabled": false,
+      "timeframe": "4h",
+      "profit_target": 0.03,
+      "stop_loss": 0.015
+    },
+    "dca": {
+      "enabled": false,
+      "interval_hours": 24,
+      "amount_per_order": 100
+    }
+  },
+  "risk_management": {
+    "max_risk_per_trade": 0.02,
+    "max_daily_loss": 0.05,
+    "max_total_exposure": 0.8,
+    "max_positions": 5,
+    "max_correlation": 0.7,
+    "account_balance": 10000,
+    "risk_level": "moderate",
+    "daily_trade_limit": 10,
+    "position_size_limits": {
+      "min_position_size": 0.001,
+      "max_position_size": 0.1
+    },
+    "default_stop_loss_pct": 0.02,
+    "trailing_stop_enabled": true,
+    "trailing_stop_pct": 0.01
+  },
+  "exchanges": {
+    "default_exchange": "binance",
+    "binance": {
+      "enabled": true,
+      "testnet": true,
+      "api_key": "",
+      "api_secret": "",
+      "base_url": "https://testnet.binance.vision",
+      "timeout": 10,
+      "recv_window": 5000
+    },
+    "bybit": {
+      "enabled": false,
+      "testnet": true,
+      "api_key": "",
+      "api_secret": "",
+      "timeout": 10,
+      "recv_window": 5000
+    }
+  },
+  "notifications": {
+    "telegram": {
+      "enabled": false,
+      "bot_token": "",
+      "chat_id": "",
+      "send_signals": true,
+      "send_trades": true,
+      "send_errors": true,
+      "send_reports": true,
+      "use_markdown": true,
+      "include_timestamp": true,
+      "min_message_interval": 1
+    },
+    "whatsapp": {
+      "enabled": false,
+      "twilio_account_sid": "",
+      "twilio_auth_token": "",
+      "from_number": "",
+      "to_number": "",
+      "send_signals": true,
+      "send_trades": true,
+      "send_errors": true,
+      "send_reports": false,
+      "include_timestamp": true,
+      "min_message_interval": 5
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "file_rotation": true,
+    "max_file_size": "10MB",
+    "backup_count": 5
+  },
+  "auto_tune": {
+    "enabled": false,
+    "hour": 1,
+    "minute": 0,
+    "timeframe": "1h",
+    "trials": 120,
+    "chunk": 12,
+    "extra_args": "",
+    "use_auto_pairs": true,
+    "top_n": 2,
+    "symbols": ["BTCUSDT", "ETHUSDT"]
+  },
+  "system": {
+    "timezone": "Asia/Jakarta",
+    "data_retention_days": 30,
+    "backup_enabled": true,
+    "maintenance_hour": 2
+  }
+}

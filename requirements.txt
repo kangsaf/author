@@ -2,24 +2,43 @@
 openai>=1.30.0
 pydantic>=2.8.2
 
-# Third-party dependencies
-apscheduler
-joblib
-matplotlib
-numpy
-optuna
-pandas
-plotly
-pybit
-python-dotenv
-python-telegram-bot
-pytz
-requests
-schedule
-scikit-learn
-streamlit
-ta
-twilio
-websocket-client
-websockets
-xgboost
+# Core dependencies for trading bot
+pandas>=1.5.0
+numpy>=1.21.0
+requests>=2.28.0
+python-dotenv>=0.19.0
+pytz>=2022.1
+
+# Technical analysis
+ta>=0.10.2
+scikit-learn>=1.1.0
+
+# Exchange APIs
+pybit>=5.0.0
+websocket-client>=1.4.0
+websockets>=10.4
+
+# Scheduling and async
+apscheduler>=3.9.0
+schedule>=1.2.0
+
+# Notifications
+python-telegram-bot>=20.0
+twilio>=7.16.0
+
+# Data visualization (optional for analysis)
+matplotlib>=3.5.0
+plotly>=5.11.0
+
+# Machine learning and optimization
+xgboost>=1.6.0
+optuna>=3.0.0
+joblib>=1.2.0
+
+# Web interface (optional)
+streamlit>=1.25.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.21.0

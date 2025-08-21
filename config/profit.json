@@ -1,0 +1,62 @@
+{
+  "daily_profits": {},
+  "monthly_profits": {},
+  "yearly_profits": {},
+  "total_profit": 0.0,
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0.0,
+  "best_trade": {
+    "profit": 0.0,
+    "symbol": "",
+    "date": "",
+    "strategy": ""
+  },
+  "worst_trade": {
+    "profit": 0.0,
+    "symbol": "",
+    "date": "",
+    "strategy": ""
+  },
+  "performance_metrics": {
+    "sharpe_ratio": 0.0,
+    "max_drawdown": 0.0,
+    "profit_factor": 0.0,
+    "average_win": 0.0,
+    "average_loss": 0.0,
+    "largest_win": 0.0,
+    "largest_loss": 0.0
+  },
+  "strategy_performance": {
+    "ai_signal": {
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit": 0.0,
+      "win_rate": 0.0
+    },
+    "scalping": {
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit": 0.0,
+      "win_rate": 0.0
+    },
+    "swing": {
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit": 0.0,
+      "win_rate": 0.0
+    },
+    "dca": {
+      "total_trades": 0,
+      "winning_trades": 0,
+      "total_profit": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "symbol_performance": {},
+  "last_updated": "",
+  "account_history": [],
+  "drawdown_periods": [],
+  "risk_events": []
+}
