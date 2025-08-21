@@ -1,0 +1,2 @@
+# author
+bot trading
