@@ -17,8 +17,8 @@ python run.py --mode streamlit
 # Method 2: Direct Streamlit
 streamlit run streamlit_app/app.py
 
-# Method 3: Via streamlit_main.py
-python streamlit_main.py
+# Method 3: Legacy (if app_streamlit/ exists)
+streamlit run app_streamlit/Home.py
 ```
 
 ### 3. Access Dashboard

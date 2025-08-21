@@ -105,8 +105,7 @@ def run_streamlit():
         # Check if streamlit app exists
         streamlit_apps = [
             "streamlit_app/app.py",
-            "app_streamlit/Home.py",
-            "streamlit_main.py"
+            "app_streamlit/Home.py"
         ]
         
         entry = None
